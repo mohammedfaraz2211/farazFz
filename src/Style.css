@@ -1,0 +1,165 @@
+.h2{
+    text-align: center;
+}
+.Login_container{
+    border: 1px solid black;
+    height: 360px auto;
+    width: 300px;
+    list-style: none;
+    margin:30px auto;
+    padding: 20px;
+    border-radius: 5%;
+    text-align: center;
+    background-color: #FF6E33;
+}
+.second_container{
+    border: 1px solid black;
+    list-style: none;
+    padding: 30px;
+    margin: auto;
+    border-radius: 5%;
+    background-color: cyan;
+}
+.SignIn_button{
+    width: 100%;
+    background-color: #FF6E33;
+    height:35px;
+}
+.input_Style{
+    width: 100%;
+    padding: 5px;
+}
+.li_Style{
+    padding: 8px;
+}
+.LinkTag{
+    float: right;
+}
+
+.Navigation_bar{
+    display: flex;
+    width: 100vw;
+    height: 5rem;
+    background-color: #FF6E33;
+    justify-content: space-between;
+}
+.Navigation_bar1{
+    display: flex;
+    width:30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.SignUp_container{
+    border: 1px solid black;
+    height: 470px auto;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 5%;
+    text-align: center;
+    background-color: #FF6E33;
+}
+.SignUp_2container{
+    border: 1px solid black;
+    height: 320px;
+    margin: 30px;
+    list-style: none;
+    padding: 20px;
+    border-radius: 5%;
+    background-color: cyan;
+}
+.navigation_rightsid{
+    display : flex;
+    width: 10%;
+    justify-content: space-around;
+}
+
+.Navigation_li{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.Message_show{
+    color: red;
+}
+.Card_container{
+    border: 1px solid black;
+    height: 330px;
+    width: 220px;
+    border-radius: 5%;
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+    background-color: cyan;
+    
+}
+img{
+    height: 100px;
+    width: 150px;
+    border-radius: 5%;
+}
+.Discount_Price{
+    color: green;
+}
+.Card_Button{
+    background-color: #FF6E33;
+    height: 30px;
+    width: 100px;
+}
+.search_input{
+    list-style: none;
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    margin: 20px ;
+}
+.search-btn{
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+
+}
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .details_container{
+    height: 400px;
+    width: 600px;
+    margin: 60px auto;
+    border: 2px solid black;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10%;
+  }
+  .AddToCard_container{
+    border: 2px solid black;
+    width: 1400px ;
+    height: 250px;
+  }
+  .AddToCard_img{
+    height:250px ;
+    width: 200px;
+    float: left;
+  }
+  .AddToCard_container1{
+    float: left;
+    padding: auto;
+  }
