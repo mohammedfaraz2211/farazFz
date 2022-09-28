@@ -1,165 +1,236 @@
-.h2{
-    text-align: center;
-}
-.Login_container{
-    border: 1px solid black;
-    height: 360px auto;
-    width: 300px;
-    list-style: none;
-    margin:30px auto;
-    padding: 20px;
-    border-radius: 5%;
-    text-align: center;
-    background-color: #FF6E33;
-}
-.second_container{
-    border: 1px solid black;
-    list-style: none;
-    padding: 30px;
-    margin: auto;
-    border-radius: 5%;
-    background-color: cyan;
-}
-.SignIn_button{
-    width: 100%;
-    background-color: #FF6E33;
-    height:35px;
-}
-.input_Style{
+.input_Style {
     width: 100%;
     padding: 5px;
 }
-.li_Style{
-    padding: 8px;
-}
-.LinkTag{
-    float: right;
-}
 
-.Navigation_bar{
+.Message_show {
+    color: red;
+    text-align: center;
+}
+.AddToCard_container {
     display: flex;
-    width: 100vw;
-    height: 5rem;
-    background-color: #FF6E33;
     justify-content: space-between;
-}
-.Navigation_bar1{
-    display: flex;
-    width:30%;
-    justify-content: space-around;
-    align-items: center;
+    border: 2px solid black;
+    width: 80%;
+    background-color: antiquewhite;
+
 }
 
-.SignUp_container{
+.AddToCard_img {
+    height: 200px;
+    width: 150px;
+}
+
+.AddToCard_container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px auto;
+    text-align: center;
     border: 1px solid black;
-    height: 470px auto;
+    width: 80%;
+}
+
+
+.placeToOrder {
+    padding: 10px;
+    border: 2px solid black;
+    height: 200px;
+    width: 40%;
+    background-color: wheat;
+}
+.Style_NavBar {
+    height: 38px;
+    width: 100px;
+    margin: 5px;
+    font-size: 25px;
+    
+}
+
+.me-2 {
+    height: 38px;
+    margin: 5px;
+}
+
+.main_signup {
+    height: auto;
     width: 350px;
     margin: 20px auto;
-    border-radius: 5%;
-    text-align: center;
-    background-color: #FF6E33;
-}
-.SignUp_2container{
-    border: 1px solid black;
-    height: 320px;
-    margin: 30px;
-    list-style: none;
     padding: 20px;
-    border-radius: 5%;
-    background-color: cyan;
-}
-.navigation_rightsid{
-    display : flex;
-    width: 10%;
-    justify-content: space-around;
+    font-size: 20px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.Navigation_li{
-    color: black;
-    text-decoration: none;
-    list-style: none;
-    
+.main_signup:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0.5rem 0.75rem 1.5rem #1260d6;
 }
-.Message_show{
-    color: red;
+
+.inpute_element {
+    height: 40px;
 }
-.Card_container{
-    border: 1px solid black;
-    height: 330px;
-    width: 220px;
-    border-radius: 5%;
+
+.title {
     text-align: center;
-    padding: 15px;
-    margin: 5px;
-    float: left;
-    overflow: hidden;
-    background-color: cyan;
-    
+
 }
-img{
-    height: 100px;
-    width: 150px;
-    border-radius: 5%;
+
+body {
+    /* background-image: url("file:///C:/Users/Faraz%20Fz/Downloads/simple_background_2-wallpaper-3840x1600.jpg"); */
+    background-color: orangered;
+    height: 100wh;
 }
-.Discount_Price{
+
+.SuccessfullOrder {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    width: 80%;
+    margin: 10px auto;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.secondOrderContainer {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.OrderContainer {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Modal {
     color: green;
 }
-.Card_Button{
-    background-color: #FF6E33;
-    height: 30px;
-    width: 100px;
+
+.flex {
+    display: flex;
+    height: auto;
+
+    width: 100%;
+    justify-content: center;
 }
-.search_input{
-    list-style: none;
-    height: 40px;
-    width: 300px;
-    padding: 10px;
-    margin: 20px ;
-}
-.search-btn{
-    height: 40px;
-    width: 100px;
-    padding: 10px;
-    margin: 20px;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    height: auto;
 
 }
-.collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
-  .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-  }
-  .details_container{
-    height: 400px;
-    width: 600px;
-    margin: 60px auto;
-    border: 2px solid black;
-    padding: 50px;
+
+.main2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    border-radius: 10%;
-  }
-  .AddToCard_container{
-    border: 2px solid black;
-    width: 1400px ;
-    height: 250px;
-  }
-  .AddToCard_img{
-    height:250px ;
-    width: 200px;
-    float: left;
-  }
-  .AddToCard_container1{
-    float: left;
-    padding: auto;
-  }
+    width: 30%;
+    height: 221px;
+    position: sticky;
+    top: 20px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.main-min-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.main-min-2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+}
+
+.main-min-3 {
+    display: flex;
+    align-self: center;
+
+}
+
+.Totalprice-container {
+    text-align: center;
+}
+
+.order-btn {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+.p-btn {
+    height: 30px;
+    width: 50px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.productCard {
+   float: left;
+   margin: 10px;
+    height: 330px;
+    width: 244px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    text-align: center;
+}
+
+.productCard:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0.5rem 0.75rem 1.5rem #1260d6;
+}
+
+.productImage{
+    height: 150px;
+    width: 145px;
+}
+.main_card_components{
+    float: right;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
+.Details-div{
+    text-align: center;
+    height: 145px;
+}
+.order{
+    text-align: center;
+}
+.Carousel{
+    height: 300px;
+    width: 100%;
+}
+.slider{
+    height: 300px;
+    width: 100%;
+}
+.main-Carousel{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.second-navBar{
+    height: 38px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+}

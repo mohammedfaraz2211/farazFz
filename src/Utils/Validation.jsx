@@ -2,7 +2,7 @@
 function FnameValidate(Fname) {
   if (Fname.length < 3 || Fname === "") {
     return {
-      massage: "Fname must be atleast 3 charechter ",
+      massage: "INSERT FIRST NAME!",
       result: false
     }
   } else {
@@ -16,7 +16,7 @@ function FnameValidate(Fname) {
 function LnameValidate(Lname) {
   if (Lname.length < 3) {
     return {
-      massage: "Lname must be atleast 3 charechter ",
+      massage: "INSERT LAST NAME!",
       result: false
     }
   } else {
@@ -30,7 +30,7 @@ function LnameValidate(Lname) {
 function EmailValidate(Email) {
   if (Email === "" || !Email.includes('@')) {
     return {
-      massage: "insert email Id",
+      massage: "INSERT EMAIL ID!",
       result: false
     }
   } else {
@@ -44,7 +44,7 @@ function EmailValidate(Email) {
 function PassWordvalidate(Password) {
   if (Password.length < 4 || Password.length > 12) {
     return {
-      massage: "Passowrd Too Short",
+      massage: "INSERT PASSWORD!",
       result: false
     }
   } else {

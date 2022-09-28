@@ -1,5 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useState } from "react"
+import { AiTwotoneStar } from 'react-icons/ai'
+
+import '../Style.css'
+import Button from 'react-bootstrap/Button';
+import { Carousel } from 'react-bootstrap';
 
 // async function Updatehomepageonfetch(updateProducts , seterrormessage){
 //   try{
@@ -32,8 +37,7 @@ export default function Home(props) {
     }
   })
   const { product, searchstoredata } = Selector;
-  console.log(product)
-  
+
   const [filteredProducts, setFilteredProducst] = useState([])
 
   useEffect(() => {
@@ -51,30 +55,76 @@ export default function Home(props) {
   // const handeldeatailsproduct = (item) => {
   //   navigate('./productDetails', { state: item })
   // }
-  
-  const handelAddToCart = (item)=>{
+
+  const handelAddToCart = (item) => {
     dispatch({
-      type:"AddToCart",
-      payload:{
+      type: "AddToCart",
+      payload: {
         product: item
       }
     })
   }
 
   return (
-    <div>
+    <div className='main_card_components'>
+      <div>
+        <Carousel className='main-Carousel'>
+          <Carousel.Item interval={1500}>
+            <img
+              className='Carousel'
+              src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/aa1677186f1bab31.jpg?q=50"
+              alt="First slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={1500}>
+            <img
+              className='Carousel'
+              src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/b59be45f9244bab8.jpg?q=50"
+              alt="Second slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={1500}>
+            <img
+              className='Carousel'
+              src="https://trak.in/wp-content/uploads/2018/07/Flipkart-Big-Shopping-Days-.jpg"
+              alt="Third slide"
+            />
+          </Carousel.Item >
+          <Carousel.Item interval={1500}>
+            <img
+              className='Carousel'
+              src="https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/1408e7a0d97cd036.jpg?q=50"
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={1500}>
+            <img
+              className='Carousel'
+              src="https://rukminim1.flixcart.com/flap/1688/280/image/32598b2c6b817bde.jpg?q=50"
+              alt="Third slide"
+            />
+          </Carousel.Item>
+        </Carousel>
+      </div>
       {filteredProducts?.length === 0 ? (<h2 style={{ color: "red", textAlign: 'center' }}>no products available</h2>) : (filteredProducts?.map((item, index) => {
         return (
-          <div className="Card_container" key={index}>
-            <img src={item?.image} alt=""></img>
-            <h3>{item.title}</h3>
-            <h4>₹{item.price}  <span className="Discount_Price">{item.discount} off</span></h4>
-            <div><span className="Discount_Price">Rate: {item.rating.rate}</span> &nbsp;&nbsp; count: {item.rating.count}</div>
-            <button onClick={()=>handelAddToCart(item)}>Add To Cart</button>
+          <div key={item.id} className='productCard'>
+            <div className='img-div'>
+              <img src={item.image} alt='product-img' className='productImage'></img>
+            </div>
+            <div className='Details-div'>
+              <h5>{item.title}</h5>
+              <h3>${item.price}</h3>
+              <h3>{item.rating.count} units sold</h3>
+              <h4><AiTwotoneStar></AiTwotoneStar>{(item.rating.rate)}</h4>
+            </div>
+            <Button variant="primary" onClick={() => handelAddToCart(item)}>Add To Cart</Button>
           </div>
         );
       })
       )}
-    </div>
+    </div >
   )
 }
+
+
